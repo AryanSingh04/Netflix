@@ -1,0 +1,590 @@
+
+*{
+    margin: 0;
+    padding: 0;
+ scroll-behavior: smooth;
+font-family: sans-serif;
+  position: relative;
+}
+input::placeholder{
+  color: rgb(126, 126, 126);
+}
+.header{
+    height: 100vh;
+
+    background-image:url(https://assets.nflxext.com/ffe/siteui/vlv3/ce221d7a-8901-41d9-b726-3ea2efe3a650/2f69dcef-463f-44da-b3b9-662b65f33f82/IN-hi-20230703-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    box-shadow: inset -400px -400px 800px  rgba(0, 0, 0, 0.484),inset 400px 400px 800px rgba(0, 0, 0, 0.455);
+    
+position: relative;
+}
+
+.box{
+  position: absolute;
+  left: 0;
+  top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: transparent;
+  width: 100%;
+height: 80%;
+
+}
+.box h2{
+  font-weight: 800;
+  padding: 0;
+  color: white;
+}
+.box p{
+  color: white;
+  margin-top: 2%;
+  font-weight: 500;
+  font-size: 30px;
+  padding-left: 0%;
+}
+.low input{
+  padding: 0% 2%;
+  width: 50%;
+border-radius: 7px;
+margin-top: 5%;
+font-size: 20px;
+  color: white;
+  
+ height: 55px;
+ background-color: rgba(15, 15, 15,0.8);
+border: 1px solid gray;
+}
+.low{
+  text-align: center;
+
+
+}
+.low button{
+  border:none;
+  background-color:rgb(255, 0, 0);
+  font-size:20px;
+  padding:10px 20px;
+  color:white;
+  border-radius:8px;
+ width: max-content;
+}
+
+.nav{
+    height: 5vw;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: blue; */
+}
+.nav img{
+    height: 55%;
+
+     padding-left:2%;
+     
+}
+.nav img:hover{
+    scale: 1.1;
+    transition: scale .5s;
+}
+.nav .lang{
+margin-right: 20%;
+}
+.lang select{
+  text-align: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 150%;
+padding: 2% 5%;
+border: 1.5px solid gray;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: white;
+font-weight: 700;
+border-radius: 8px;
+}
+.lang select::before{
+  display: block;
+  content: "\1F310";
+}
+.nav .right{
+  display: flex;
+ justify-content: end;
+    margin-right: 5%;
+  
+    width: 50%;
+}
+.right button{
+    border:none;
+    background-color:rgb(255, 0, 0);
+    font-size:20px;
+    padding:10px 20px;
+    color:white;
+    border-radius:8px;
+   width: max-content;
+
+}
+button a{
+  color: white;
+  text-decoration: none;
+}
+.sign a:hover{
+  cursor: pointer;
+  background-color: rgb(144, 0, 0);
+  transition: .5s;
+}
+a:hover button{
+  cursor: pointer;
+  background-color: rgb(144, 0, 0);
+  transition: .5s;
+}
+.page1,.page2,.page3,.page4{
+    border-top: 8px solid rgb(71, 71, 71);
+    background-color:rgb(0, 0, 0);
+    color:white;
+    height:80vh;
+    display: flex;
+overflow: hidden;
+}
+.page5{
+  height: max-content;
+}
+.left{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(0, 0, 0);
+    width:40%;
+    height:80vh;
+    
+}
+.page4 .left{
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.page4 .right{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background-color:rgb(0, 0, 0);
+  width:40%;
+  height:80vh;
+}
+  h2{
+text-align: center;
+    font-size:3.5vw;
+    padding-left:8vw;
+
+} 
+ p{
+    margin-top: 4%;
+    font-size: 2vw;
+    padding-left: 27%;
+    font-family: sans-serif;
+    
+}
+ button:hover{
+    cursor: pointer;
+    background-color: rgb(144, 0, 0);
+    transition: .5s;
+}
+.page1 .right{
+    width: 60%;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    position: relative;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.page1 .right img{
+   width: 70%;
+  position: absolute;
+
+}
+.page1 .right video{
+  width:51%;
+}
+
+.page2 .right img, .page4 .left img{
+    position: static;
+    width: 90%;
+}
+.page2 .left h2{
+  padding-left: 2vw;
+}
+.page2 .left p{
+  padding-left: 10%;
+}
+.page4 .right{
+  padding-bottom: 10%;
+
+  background-color: rgb(0, 0, 0);
+}
+.page2 .left{
+background-color: rgb(0, 0, 0);
+width: 50%;
+/* position: relative;
+overflow: hidden; */
+}
+.page2 .right{
+background-color: rgb(0, 0, 0);
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .page2 .left p{
+    text-align: start;
+   width: 80%;
+  
+margin-left: 0%;
+margin-right: 20%;
+   font-size: 2vw;
+  
+} */
+.page1 .right video{
+    /* width: 68%; */
+  width:51%;
+  
+
+/* position: absolute;
+top: 19.5%;
+left: 25%; */
+}
+.page3 .left{
+    width: 50%;
+    background-color: black;
+
+}
+/* .page3 p{
+    text-align: start;
+    width: 80%;
+  
+ margin-left: 30%;
+ margin-right: 20%;
+    font-size: 2vw;
+} */
+.page3 .right{
+    position: relative;
+  width: 50%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.page3 img{
+    position: absolute;
+
+    width: 80%;
+   
+}
+.page3 video{
+     /* position: absolute; */
+    /* top: 29%;
+    left: 34%;  */
+ width: 50%;
+ margin-bottom: 22%;
+}
+/* page4 */
+.page5{
+  border-top: 8px solid rgb(71, 71, 71);
+  flex-direction: column;
+  height: max-content;
+  background-color: black;
+  color: white;
+  padding-bottom: 8vh;
+}
+.page5 h3{
+  font-size: 40px ;
+text-align: center;
+padding-top: 5%;
+margin-top: 2%;
+}
+
+.faq{
+  width: 80%;
+  margin-left: 10%;
+height: max-content;
+  margin-top: 0;
+  font-family: sans-serif;
+
+}
+.low-faq{
+  width: 80%;
+  margin-left: 10%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+}
+.low-faq p{
+  font-size: 35px;
+  padding: 2% 5%;
+}
+ input{
+  padding: 0% 2%;
+  width: 40%;
+  font-size: 20px;
+border-radius: 4px;
+  color: white;
+ height: 55px;
+ background-color: rgb(15, 15, 15);
+border: 1px solid gray;
+
+}
+::placeholder{
+  color: white;
+}
+ button{
+  margin-left: 2.5%;
+  border:none;
+  background-color:rgb(255, 0, 0);
+  font-size: 20px;
+  padding: 15px 10px;
+  color:white;
+  border-radius:4px;
+
+}
+.faq div{
+
+  width: 90%;
+  /* max-height: 0; */
+  display: none;
+  margin-left: 5%;
+}
+.faq div p{
+  width: 100%;
+ margin-top: 0;
+}
+.faq label{
+
+ text-align:left ;
+  font-size: 30px;
+  display: flex;
+  width: 80%;
+  height: max-content;
+
+  padding:2% 5% ; 
+background-color: rgb(40, 40, 40);
+transition: .4s;
+margin: 1.5vw 5%;
+}
+.faq label:hover{
+  background-color: rgb(86, 86, 86);
+  transition: .4s;
+}
+
+.faq p{
+
+  text-align: center;
+  padding:2% 0 ;
+  background-color: rgb(87, 87, 87);
+  font-size: 30px
+ 
+}
+
+.faq label img{
+  position: absolute;
+  height: 30px;
+  filter: invert();
+  mix-blend-mode: screen;
+right: 2%;
+  top: 30%;
+  transform: rotate(0deg);
+  transition: transform .3s;
+}
+
+.cq1,.cq2,.cq3,.cq4,.cq5,.cq6{
+  height: 0;
+}
+
+/* page4 */
+.page4{
+  height: max-content;
+}
+#lq1.active + .cq1,
+#lq2.active + .cq2,
+#lq3.active + .cq3,
+#lq4.active + .cq4,
+#lq5.active + .cq5,
+#lq6.active + .cq6{
+ height: max-content;
+  z-index: 1;
+ display: block;
+  transition: all 1.8s;
+}
+#lq1.active img,
+#lq2.active img,
+#lq3.active img,
+#lq4.active img,
+#lq5.active img,
+#lq6.active img{
+
+  transform: rotate(45deg);
+}
+@media(max-width:425px){
+   .header{
+    box-shadow: inset -10px -10px 1000px  rgb(0, 0, 0),inset 10px 10px 1000px black;
+    height: 80vh;
+   }
+    .page1,.page2,.page3,.page4{
+        flex-direction: column;
+       
+        padding-bottom: vh;
+      overflow: hidden;
+      
+    }
+    .page1 .right video{
+      width:58%;
+    }
+    .nav .right{
+      margin-right: 10%;
+  }
+    .nav .right button{
+    
+      height: 30px;
+      font-size: 15px;
+      padding:5% 10%;
+    }
+    .box{
+      padding-top: 5%;
+    }
+    .box h2{
+      font-size: 18px;
+    }
+    .box p{
+      font-size: 15px;
+    }
+    .low-faq p{
+      font-size: 15px;
+    }
+    .main .left{
+        width: 100%;
+        height: max-content;
+        padding-bottom: 0vh;
+    }.main .right{
+        width: 100%;
+        height: max-content;
+    }
+.page1 .left{
+  padding-bottom: 20vh;
+}
+    .page1 .right img{
+       width: 80%;
+    }
+    .page3 .left{
+      padding-bottom: 0;
+    }
+   
+    .page2{
+      padding-bottom: 0px;
+    }
+    .page2 .left,.pag4 .right{
+        margin-top: 0vh;
+        font-size: 50px;
+        padding-top: 0%;
+        text-align: center;
+        height: max-content;
+        background-color: rgb(0, 0, 0);
+    }
+    .page2 .right, .page4 .left{
+      height: 50vh;
+      background-color: rgb(0, 0, 0);
+    }
+ 
+     p{
+        padding-left: 2vw;
+        font-size: 20px;
+      text-align: center;
+      
+    }
+    h2{
+         font-size: 30px;
+         padding-left: 0;
+    }
+    .page3 .left{
+  width: 100%;
+ height: 45vh;
+    }
+    .faq p{
+      font-size: 25px;
+    }
+    .faq label{
+   padding: 5%;
+      font-size: 20px;
+    }
+    .low button{
+      /* width: 40%;
+      height: 25%; */
+    margin-top: 2%;
+    height: 45px;
+      font-size: 15px;
+      padding: 2% 5%;
+      border-radius: 5px ;
+    }
+    .low input{
+      font-size: 20px;
+     height: max-content;
+      padding: 2% 5% ;
+    }
+    .faq label img{
+      height: 15px;
+    }
+    .low-faq p{
+      font-size: 18px;
+      font-weight: 100;
+    }
+   .low-faq input{
+    width: 80%;
+padding-left: 5%;
+    min-width: 90px;
+   font-size: 15px;
+    height: 40px;
+   }
+ .low-faq button{
+  margin-top: 5%;
+  font-size: 15px;
+  padding: 3% 5%;
+  height: 45px;
+  border-radius: 6px;
+ }   
+
+}
+.container{
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader{
+  width: 5vw;
+  height: 5vw;
+ border: 10px solid gray;
+  border-radius: 50%;
+  border-top:10px solid red;
+  animation: loader 1s infinite ;
+}
+@keyframes loader {
+  0%{
+
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+@media (max-width:426px){
+.loader{  width: 15vw;
+  height: 15vw;
+}
+}
